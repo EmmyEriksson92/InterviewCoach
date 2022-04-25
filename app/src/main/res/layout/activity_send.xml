@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_sendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Send email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alike_regular"
+        android:text="To:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_text_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter recipient"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alike_regular"
+        android:text="Subject:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_text_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter subject"
+        android:inputType="textEmailSubject"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alike_regular"
+        android:text="Message:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:hint="Enter message"
+        android:minHeight="150dp"
+        android:paddingLeft="5dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Attachment:"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:id="@+id/btn_attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_send"
+        android:onClick="addAttachment"
+        android:text="add file"
+        android:textColor="@android:color/white" />
+
+    <android.widget.Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/custom_send"
+        android:minWidth="110sp"
+        android:onClick="sendMessage"
+        android:text="send"
+        android:textColor="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="My profile" />
+    <item
+        android:id="@+id/nav_contacts"
+        android:icon="@drawable/ic_contacts"
+        android:title="My contacts" />
+    <item
+        android:id="@+id/nav_support"
+        android:icon="@drawable/ic_help_outline_black_24dp"
+        android:title="Support" />
+    <item
+        android:id="@+id/nav_send"
+        android:icon="@drawable/ic_email_black_24dp"
+        android:title="Send email" />
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+</menu>

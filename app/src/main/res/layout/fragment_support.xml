@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/colorVeryLightBlue">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Support"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_gravity="start"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:gravity="start"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topics"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_gravity="start"
+        android:layout_marginBottom="5dp"/>
+
+    <ListView
+        android:id="@+id/lv_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:entries="@array/Support"
+        android:layout_weight="5"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_orange_dark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+    <android.widget.Button
+        android:id="@+id/btn_chatSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginRight="18dp"
+        android:layout_gravity="start"
+        android:text="Chat with us"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_supportbutton" />
+
+    <android.widget.Button
+        android:id="@+id/btn_emailSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="end"
+        android:text="Send Email"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_supportbutton"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">InterviewCoach</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="facebook_app_id">277815770769935</string>
+
+    <string-array name="Support">
+        <item name="Account_personalDetails">Account &amp; Personal Details</item>
+        <item name="App_features">App &amp; Features</item>
+        <item name="Security">Security</item>
+    </string-array>
+
+    <string-array name="spinner_items">
+        <item>Choose matter:</item>
+        <item>Technical questions</item>
+        <item>Create account</item>
+        <item>Remove account</item>
+        <item>Record video</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="tips_video_header">To think about when in video interview:</string>
+    <string name="paragraph">\u2022 Speak clearly\n\n\u2022 Do not talk too fast\n\n\u2022 Pause at the end of a question so that you don’t talk over the interviewer (there is a slight delay online)\n\n\u2022 Smile and look interested\n\n
+        \u2022 Sit up straight and have good body language\n\n\u2022 Keep up good eye contact – look at your camera rather than at the screen
+</string>
+    <string name="errorMessage_password">Password is invalid. Must contain at least one lowercase character,\n one uppercase character, one digit, one special character,\n and a length between 8 to 20.
+    </string>
+</resources>

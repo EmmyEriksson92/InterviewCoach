@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".PracticeFragment">
+
+        <TextView
+            android:id="@+id/tv_practice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Select a question:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stepSize="20"
+            android:value="20"
+            android:valueFrom="0"
+            android:valueTo="100"
+            app:labelBehavior="gone"
+            app:thumbColor="@color/colorLightGrey"
+            app:trackColor="@color/colorGold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoPlayer_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:use_controller="true"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_titleVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Video name:" />
+
+        <android.widget.Button
+            android:id="@+id/btn_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_profilebutton"
+            android:padding="10dp"
+            android:text="Capture video"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/btn_saveVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_profilebutton"
+                android:padding="10dp"
+                android:text="Save video"
+                android:textColor="@android:color/white" />
+
+            <android.widget.Button
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_profilebutton"
+                android:padding="10dp"
+                android:text="Share video"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tips_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:fontFamily="@font/alike_regular"
+            android:padding="@dimen/com_facebook_likeview_edge_padding"
+            android:text="@string/tips_video_header"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" />
+
+        <TextView
+            android:id="@+id/tips_video1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tips_video"
+            android:fontFamily="@font/alike_regular"
+            android:padding="@dimen/com_facebook_likeview_edge_padding"
+            android:text="@string/paragraph"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "855607293814",
+    "project_id": "interviewcoach",
+    "storage_bucket": "interviewcoach.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855607293814:android:ffac15b5a9f3876dc82c57",
+        "android_client_info": {
+          "package_name": "com.example.interviewcoach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855607293814-06qqfmpb5v1pja3k38pgh1o0imdtvnd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIIkEf4EdXtDR2qvqDUk1t7qfEAtcK5OU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855607293814-06qqfmpb5v1pja3k38pgh1o0imdtvnd5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
