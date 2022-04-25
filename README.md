@@ -1,6 +1,6 @@
 # InterviewCoach
 
-This project was part of a course about programming for mobiles, which was part of the program: "data-och systemvetenskapligt kandidatprogram" at Stockholm University.
+This project was done as an examination work of a course about programming for mobiles, which was part of the program: "data-och systemvetenskapligt kandidatprogram" at Stockholm University.
 
 **About this project:**
 
